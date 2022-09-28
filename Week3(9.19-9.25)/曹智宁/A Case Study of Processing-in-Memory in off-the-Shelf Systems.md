@@ -20,7 +20,7 @@
 
 现有PIM体系结构众多，位置不同。我们从COMPUTE-OUT-MEMORY-NEAR(COM-N)模型研究特定的硬件。该模型包括位于存储器阵列外部但在存储器包内部(相同或不同的硅模)的计算逻辑，也被称为PIM。在本研究结束后，三星宣布生产类似的PIM硬件(FIMDRAM)，也属于COM-N型号[15]。虽然无法进行深入的比较，但公布的设计有明显相似之处。本研究会适用于以后的PIM研究。
 
-![Figure 1](picture\Figure 1.png)
+![Figure 1](picture/Figure 1.png)
 
 **Organization** 在本文研究的体系结构中，DRAM被组织成ranks(每个DIMM有两个ranks)，每个ranks包含8个内存芯片。每个DRAM芯片包括8个DRAM Processing unit (dpu)。每个DPU都附带一个64MB的DRAM片。每个级别有64个dpu，每个8GB内存内存有128个dpu。
 
