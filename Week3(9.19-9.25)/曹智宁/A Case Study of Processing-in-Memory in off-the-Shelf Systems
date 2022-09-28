@@ -100,7 +100,7 @@ DPU架构的SDK包括一个C编译器和一些库，这些库具有加载和启�
 
 图8显示了在875MB Linux源代码树上执行不同级别的grep相对于单个主机CPU的吞吐量。相对于主机的吞吐量增益并不大，使用两个以上的级别(128 dpu)没有任何优势。原因是在发布前很难在dpu之间平均分配工作。输入源文件的大小各不相同，即使将它们组织到每个DPU大小相同的桶中，也不能保证所有DPU上的处理时间保持相似。因此，grep使用硬件的效率很低:在最快和最慢的dpu上执行时间的比率是116倍，这表明存在拖后腿者，影响了整个排名。相比之下，JSON过滤，一种与grep非常相似但很容易平均分配工作的工作负载，具有最快/最慢的执行比率为1(没有掉线)和与其他工作负载相似的扩展属性(为简洁起见，图中略去)。
 
-![Figure 8](C:\Users\cznem\Desktop\华为云盘\学习资料\科创\Paper\A Case Study of Processing-in-Memory in off-the-Shelf Systems\Figure 8.png)
+![Figure 8](.\picture\Figure 8.png)
 
 #### 3.6 System cost
 
